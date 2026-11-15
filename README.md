@@ -1,5 +1,10 @@
 # Close to home: APA 2025
 
+[![Check](https://github.com/AdmcCarthy/ds-apa-awards/actions/workflows/check.yml/badge.svg)](https://github.com/AdmcCarthy/ds-apa-awards/actions/workflows/check.yml)
+[![Pages](https://github.com/AdmcCarthy/ds-apa-awards/actions/workflows/pages.yml/badge.svg)](https://github.com/AdmcCarthy/ds-apa-awards/actions/workflows/pages.yml)
+![Python](https://img.shields.io/badge/python-%E2%89%A53.12-lightgrey)
+[![Licence](https://img.shields.io/badge/licence-MIT%20with%20acknowledgement-lightgrey)](LICENSE)
+
 A data story on Norway's APA 2025 licensing round: 56 production licences, announced 13 January 2026
 and granted 20 March 2026 (Sodir round code `TFO2025`). Built with
 [SubScout](https://github.com/AdmcCarthy/core-subscout) as its first real test case.
