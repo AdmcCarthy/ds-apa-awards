@@ -2,7 +2,7 @@
 
 A data story on Norway's APA 2025 licensing round: 56 production licences, announced 13 January 2026
 and granted 20 March 2026 (Sodir round code `TFO2025`). Built with
-[SubScout](https://github.com/AdmcCarthy/kit-subscout) as its first real test case.
+[SubScout](https://github.com/AdmcCarthy/core-subscout) as its first real test case.
 
 **Live page:** https://admccarthy.github.io/ds-apa-awards/
 
