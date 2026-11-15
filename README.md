@@ -2,9 +2,9 @@
 
 A data story on Norway's APA 2025 licensing round: 56 production licences, announced 13 January 2026
 and granted 20 March 2026 (Sodir round code `TFO2025`). Built with
-[SubScout](https://github.com/AdmcCarthy/SubScout) as its first real test case.
+[SubScout](https://github.com/AdmcCarthy/kit-subscout) as its first real test case.
 
-**Live page:** https://admccarthy.github.io/APA_awards/
+**Live page:** https://admccarthy.github.io/ds-apa-awards/
 
 ## How it is made
 
@@ -57,5 +57,5 @@ uv run pytest -q
 ## Licence and acknowledgement
 
 MIT License with Acknowledgement ([LICENSE](LICENSE)): the MIT terms plus one condition. Anything built with this work says so,
-visibly and in plain words, and does not imply endorsement: "Built with APA awards by Adam McCarthy (https://github.com/AdmcCarthy/APA_awards)". The wording is custom, so
+visibly and in plain words, and does not imply endorsement: "Built with APA awards by Adam McCarthy (https://github.com/AdmcCarthy/ds-apa-awards)". The wording is custom, so
 the licence is not OSI-approved. Sodir data are used under the Norwegian Licence for Open Government Data (NLOD 2.0); attribution lines are in the story's basis of analysis. Third-party data and vendored code keep their own terms.
