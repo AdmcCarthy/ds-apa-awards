@@ -183,13 +183,16 @@ def main() -> None:
 
     # --- company table --------------------------------------------------------
     area = awd.set_index("prlNpdidLicence").prlOriginalArea
-    at_grant["net_km2"] = at_grant.prlLicenseeInterest / 100 * at_grant.prlNpdidLicence.map(area)
+    at_grant["gross_km2"] = at_grant.prlNpdidLicence.map(area)
+    at_grant["net_km2"] = at_grant.prlLicenseeInterest / 100 * at_grant.gross_km2
     comp = (
         at_grant.groupby("cmpLongName")
         .agg(licences=("prlNpdidLicence", "nunique"), operated=("is_op", "sum"),
-             net_km2=("net_km2", "sum"), mean_pct=("prlLicenseeInterest", "mean"))
+             net_km2=("net_km2", "sum"), mean_pct=("prlLicenseeInterest", "mean"),
+             gross_km2=("gross_km2", "sum"))
         .reset_index()
     )
+    comp["area_weighted_pct"] = 100 * comp.net_km2 / comp.gross_km2          # net over gross area: a mean of percentages gives a small licence the weight of a large one
     comp["name"] = comp.cmpLongName.map(short)
     comp["featured"] = comp.cmpLongName.isin(FEATURED)
     comp = comp.sort_values(["licences", "operated"], ascending=False)
